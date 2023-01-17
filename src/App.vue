@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav>
+    <router-link to="/">Home</router-link> 
+    <router-link to="/new-project">Add a New Project</router-link>
+  </nav>
+
+  <div class="home">
+    <nav>
+      <router-link to="/projects">View All</router-link>
+      <router-link to="/completed">Completed</router-link>
+      <router-link to="/ongoing">Ongoing</router-link>
+    </nav>
+</div>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
+:root {
+  --blue-color: #33cccc;
+  --red-color: #ff4646;
+  --green-color: #9ec378;
+  --black-color: #333;
+  --white-color: #fff;
+  --grey-color: #e5e8ec;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+nav {
+  margin-top: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--black-color);
+}
+
+nav a.router-link-exact-active {
+  color: var(--blue-color);
+}
+
+.home nav a {
+  font-size: 1.2rem;
 }
 </style>

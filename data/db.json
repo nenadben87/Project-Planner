@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "title": "Project 6",
+      "details": "This is project 6!",
+      "completed": false,
+      "compl": "no",
+      "id": 6
+    },
+    {
+      "title": "Create Marketing Email",
+      "details": "Emai marketing for customers",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "title": "To do App",
+      "details": "Crate list of daily tasks",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "Make Login System ",
+      "details": "Crate login logout functionality",
+      "completed": true,
+      "id": 9
+    }
+  ]
+}
